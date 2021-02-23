@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/MyProject/Scenes/Game.unity
+- path: Assets/BloodDecalsAndEffects/BloodGushFX/BloodPartcleFX_Scene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
