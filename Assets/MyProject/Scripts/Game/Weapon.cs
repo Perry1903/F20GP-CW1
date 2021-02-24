@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Weapon : MonoBehaviour
 {
+    public Player player;
     public GameController gc;
     public Camera fpsCamera;
     public ParticleSystem muzzleFlash;
@@ -19,11 +20,15 @@ public class Weapon : MonoBehaviour
     public float reloadTime = 2f;
 
     public int Ammo { get { return ammo; } }
-    public int SpareAmmo { get { return spareAmmo; } }
+    public int SpareAmmo {
+        get { return spareAmmo; }
+        set { spareAmmo = value; }
+    }
 
     private void OnEnable()
     {
         gc.CurrentWeapon(gameObject.name);
+        player.CurrentWeapon(gameObject.name);
     }
 
     // Start is called before the first frame update
