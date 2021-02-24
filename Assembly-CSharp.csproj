@@ -64,8 +64,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\MyProject\Scripts\Enemy.cs" />
-    <Compile Include="Assets\MyProject\Scripts\Weapon.cs" />
+    <Compile Include="Assets\MyProject\Scripts\Game\Bullet.cs" />
+    <Compile Include="Assets\MyProject\Scripts\Game\Enemy.cs" />
+    <Compile Include="Assets\MyProject\Scripts\Game\Player.cs" />
+    <Compile Include="Assets\MyProject\Scripts\Game\Weapon.cs" />
+    <Compile Include="Assets\MyProject\Scripts\Utils\ObjectPoolingManger.cs" />
     <Compile Include="Assets\Nokobot\Modern Guns - Handgun\_Demo Assets\SimpleShoot.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\SampleScenes\Menu\Scripts\PauseMenu.cs" />
