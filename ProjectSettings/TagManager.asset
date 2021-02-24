@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Pistol
+  - AK-47
+  - M4A1
+  - Enfield
+  - Shotgun
   layers:
   - Default
   - TransparentFX

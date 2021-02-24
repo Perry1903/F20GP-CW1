@@ -66,6 +66,7 @@
   <ItemGroup>
     <Compile Include="Assets\MyProject\Scripts\Game\Bullet.cs" />
     <Compile Include="Assets\MyProject\Scripts\Game\Enemy.cs" />
+    <Compile Include="Assets\MyProject\Scripts\Game\GameController.cs" />
     <Compile Include="Assets\MyProject\Scripts\Game\Player.cs" />
     <Compile Include="Assets\MyProject\Scripts\Game\Weapon.cs" />
     <Compile Include="Assets\MyProject\Scripts\Utils\ObjectPoolingManger.cs" />
