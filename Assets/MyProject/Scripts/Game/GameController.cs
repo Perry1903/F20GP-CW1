@@ -26,6 +26,11 @@ public class GameController : MonoBehaviour
         defeatText.gameObject.SetActive(false);
     }
 
+    // Update is used to display and update the UI regarding the player's
+    // health, ammo, and number of enemies left.
+
+    // The game controller is also involved with the win/lose logic conditions.
+
     // Update is called once per frame
     void Update()
     {

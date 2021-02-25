@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WeaponSwitching : MonoBehaviour
 {
+    // Index - hierarchy is top to bottom, so 0 is the top weapon that the player
+    // starts with on spawn.
     public int selectedWeapon = 0;
 
     // Start is called before the first frame update
@@ -47,6 +49,8 @@ public class WeaponSwitching : MonoBehaviour
         }
     }
 
+    // Cycle through the weapons to determine which is active, while
+    // setting the others to inactive.
     void SelectWeapon()
     {
         int i = 0;

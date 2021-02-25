@@ -36,6 +36,8 @@ public class Player : MonoBehaviour
 
     }
 
+    // If the player collides with an ammo crate/health crate, check if it meets the conditions to
+    // replenish the current weapon's ammo/player's health.
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         // Collecting ammo
@@ -53,6 +55,8 @@ public class Player : MonoBehaviour
         }
     }
 
+    // From Weapon class, Player class must get the current active weapon's information
+    // to determine if it meets conditions to replenish ammo.
     public void CurrentWeapon(string weaponName)
     {
         weaponObject = GameObject.FindGameObjectWithTag(weaponName);

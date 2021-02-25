@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
-    public int damage = 10;
+    // Damage and speed factors of the bullet, how fast it travels before
+    // colliding.
+    public int damage = 20;
     public float speed = 10f;
 
+    // Setting a lifetime to the bullet so that the object eventually disappears.
     public float lifetime = 1f;
     private float lifeTimer;
 
+    // When the bullet is created, set the timer.
     private void OnEnable()
     {
         lifeTimer = lifetime;
@@ -21,13 +25,14 @@ public class Bullet : MonoBehaviour
         
     }
 
+    // Projecting the bullet forward by multiplying its direction by its speed and the current time
+    // to factor in faster processing computers.
     // Update is called once per frame
     void Update()
     {
-        // Projecting bullet forward
         transform.position += transform.forward * speed * Time.deltaTime;
 
-        // Check if bullet has reached end of lifetime/range
+        // Check if bullet has reached end of lifetime/range, if so, set to inactive to return to pool.
         lifeTimer -= Time.deltaTime;
         if (lifeTimer <= 0f)
         {
