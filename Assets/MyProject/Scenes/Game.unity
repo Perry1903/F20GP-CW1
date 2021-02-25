@@ -147,7 +147,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 995185590}
   gc: {fileID: 704880303}
-  enemy: {fileID: 0}
   fpsCamera: {fileID: 343655502}
   muzzleFlash: {fileID: 1354007763}
   gunAudio: {fileID: 1664387749}
@@ -7371,7 +7370,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 995185590}
   gc: {fileID: 704880303}
-  enemy: {fileID: 0}
   fpsCamera: {fileID: 343655502}
   muzzleFlash: {fileID: 1661517300}
   gunAudio: {fileID: 486742081}
@@ -17036,6 +17034,25 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &638240822 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3137168325006481272, guid: 0c1d5906d51e7e54a95cccb847326960,
+    type: 3}
+  m_PrefabInstance: {fileID: 3137168323482535671}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &638240823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638240822}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04ade0f70c7f05744b7af25cc4e32963, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectedWeapon: 0
 --- !u!1 &667195505 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 109842, guid: 029c041c331bb0c4cb4b48887b6508da,
@@ -17062,7 +17079,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 995185590}
   gc: {fileID: 704880303}
-  enemy: {fileID: 0}
   fpsCamera: {fileID: 343655502}
   muzzleFlash: {fileID: 621181750}
   gunAudio: {fileID: 1067710336}
@@ -62877,7 +62893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: cd8d56469cf64654eaa21e15c6ae7c18, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: cd8d56469cf64654eaa21e15c6ae7c18, type: 3}
       propertyPath: m_TagString
@@ -65304,6 +65320,108 @@ Transform:
   m_Father: {fileID: 1392262562}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1093211729 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6572412891838862948, guid: fbcad720587a2414298dba545ba35867,
+    type: 3}
+  m_PrefabInstance: {fileID: 6572412890751025205}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1093211730
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1093211729}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ffad8a9445f5e674481cd9cdd2e2c66f, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.3
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!4 &1093211736 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6572412891838862957, guid: fbcad720587a2414298dba545ba35867,
@@ -74661,7 +74779,7 @@ PrefabInstance:
     - target: {fileID: 4210100720165400533, guid: 87e308cb23eea97419b3c2623d8bb3fa,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4210100720165400533, guid: 87e308cb23eea97419b3c2623d8bb3fa,
         type: 3}
@@ -75271,7 +75389,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 995185590}
   gc: {fileID: 704880303}
-  enemy: {fileID: 0}
   fpsCamera: {fileID: 343655502}
   muzzleFlash: {fileID: 2032410336}
   gunAudio: {fileID: 375905653}
@@ -75721,7 +75838,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 995185590}
   gc: {fileID: 704880303}
-  enemy: {fileID: 0}
   fpsCamera: {fileID: 343655502}
   muzzleFlash: {fileID: 56188418}
   gunAudio: {fileID: 1357326408}
@@ -91341,7 +91457,7 @@ PrefabInstance:
     - target: {fileID: 3137168325006481272, guid: 0c1d5906d51e7e54a95cccb847326960,
         type: 3}
       propertyPath: m_Name
-      value: Weapons
+      value: WeaponHolder
       objectReference: {fileID: 0}
     - target: {fileID: 3137168325107902369, guid: 0c1d5906d51e7e54a95cccb847326960,
         type: 3}
@@ -91420,10 +91536,15 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 995185590}
+    - target: {fileID: 6572412891838862951, guid: fbcad720587a2414298dba545ba35867,
+        type: 3}
+      propertyPath: zombieDead
+      value: 
+      objectReference: {fileID: 1093211730}
     - target: {fileID: 6572412891838862957, guid: fbcad720587a2414298dba545ba35867,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6572412891838862957, guid: fbcad720587a2414298dba545ba35867,
         type: 3}

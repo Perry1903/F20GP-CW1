@@ -6,7 +6,6 @@ public class Weapon : MonoBehaviour
 {
     public Player player;
     public GameController gc;
-    public Enemy enemy;
     public Camera fpsCamera;
     public ParticleSystem muzzleFlash;
     public AudioSource gunAudio;

@@ -12,10 +12,12 @@ public class Enemy : MonoBehaviour
 
     private bool playerAttacked;
 
+
     // Enemy info
     public float health = 50;
     public int damage = 20;
 
+    public AudioSource zombieDead;
     private bool dead = false;
     public bool Dead { get { return dead; } }
 
@@ -30,15 +32,6 @@ public class Enemy : MonoBehaviour
     void Update()
     {
         enemyAgent.SetDestination(player.transform.position);
-    }
-
-    public void TakeDamage(float amount)
-    {
-        health -= amount;
-        if (health <= 0f)
-        {
-            Debug.Log("Enemy died.");
-        }
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -87,6 +80,7 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         animator.SetBool("Dead", true);
+        zombieDead.Play();
         enemyAgent.enabled = false;
         enabled = false;
         gameObject.GetComponent<Rigidbody>().isKinematic = true;

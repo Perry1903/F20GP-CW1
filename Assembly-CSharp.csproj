@@ -72,7 +72,8 @@
     <Compile Include="Assets\MyProject\Scripts\Game\HealthCrate.cs" />
     <Compile Include="Assets\MyProject\Scripts\Game\Player.cs" />
     <Compile Include="Assets\MyProject\Scripts\Game\Weapon.cs" />
-    <Compile Include="Assets\MyProject\Scripts\MenuController.cs" />
+    <Compile Include="Assets\MyProject\Scripts\Game\WeaponSwitching.cs" />
+    <Compile Include="Assets\MyProject\Scripts\Menu\MenuController.cs" />
     <Compile Include="Assets\MyProject\Scripts\Utils\ObjectPoolingManger.cs" />
     <Compile Include="Assets\OtherStuff\SampleScenes\Menu\Scripts\MenuSceneLoader.cs" />
     <Compile Include="Assets\OtherStuff\SampleScenes\Menu\Scripts\PauseMenu.cs" />
