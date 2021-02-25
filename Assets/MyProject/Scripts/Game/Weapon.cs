@@ -6,6 +6,7 @@ public class Weapon : MonoBehaviour
 {
     public Player player;
     public GameController gc;
+    public Enemy enemy;
     public Camera fpsCamera;
     public ParticleSystem muzzleFlash;
     public AudioSource gunAudio;
@@ -19,7 +20,10 @@ public class Weapon : MonoBehaviour
     public float fireRate = 0.25f;
     public float reloadTime = 2f;
 
-    public int Ammo { get { return ammo; } }
+    public int Ammo {
+        get { return ammo; }
+        set { ammo = value; }
+    }
     public int SpareAmmo {
         get { return spareAmmo; }
         set { spareAmmo = value; }
