@@ -8,8 +8,9 @@ public class Enemy : MonoBehaviour
     // Following variables
     NavMeshAgent enemyAgent;
     public Player player;
+    private Animator animator;
 
-    public bool playerAttacked;
+    private bool playerAttacked;
 
     // Enemy info
     public float health = 50;
@@ -22,6 +23,7 @@ public class Enemy : MonoBehaviour
     void Start()
     {
         enemyAgent = GetComponent<NavMeshAgent>();
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -84,13 +86,15 @@ public class Enemy : MonoBehaviour
 
     void Die()
     {
+        animator.SetBool("Dead", true);
         enemyAgent.enabled = false;
         enabled = false;
-        transform.localEulerAngles = new Vector3(-10,
-            transform.localEulerAngles.y, transform.localEulerAngles.z);
+        gameObject.GetComponent<Rigidbody>().isKinematic = true;
+        //transform.localEulerAngles = new Vector3(-10,
+           // transform.localEulerAngles.y, transform.localEulerAngles.z);
 
         dead = true;
-        player.Money += 100;
+        //player.Money += 100;
     }
 
 }

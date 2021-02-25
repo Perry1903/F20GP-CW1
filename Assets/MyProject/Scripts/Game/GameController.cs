@@ -14,7 +14,7 @@ public class GameController : MonoBehaviour
     public TextMeshProUGUI ammoCounter;
     public TextMeshProUGUI healthCounter;
     public TextMeshProUGUI enemyCounter;
-    public TextMeshProUGUI moneyCounter;
+    //public TextMeshProUGUI moneyCounter;
 
     public TextMeshProUGUI victoryText;
     public TextMeshProUGUI defeatText;
@@ -48,7 +48,7 @@ public class GameController : MonoBehaviour
             victoryText.text = "YOU WIN!";
         }
 
-        moneyCounter.text = "MONEY: $" + player.Money;
+        //moneyCounter.text = "MONEY: $" + player.Money;
 
         if (player.Health <= 0)
         {

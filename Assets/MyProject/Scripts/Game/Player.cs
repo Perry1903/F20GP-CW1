@@ -10,24 +10,24 @@ public class Player : MonoBehaviour
     public int initialHealth = 100;
     private int health;
 
-    public int initialMoney = 0;
-    private int money;
+    //public int initialMoney = 0;
+    //private int money;
 
     public int Health {
         get { return health; }
         set { health = value; }
     }
-    public int Money
+    /*public int Money
     {
         get { return money; }
         set { money = value; }
-    }
+    }*/
 
     // Start is called before the first frame update
     void Start()
     {
         health = initialHealth;
-        money = initialMoney;
+        //money = initialMoney;
     }
 
     // Update is called once per frame
